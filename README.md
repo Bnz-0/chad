@@ -139,6 +139,9 @@ storing the results in the `challs` folder:
 ./chad.py generate -n5 examples/linux/bomb -o challs
 ```
 
+> Notice: you need [pwntools](https://docs.pwntools.com/en/stable/install.html#python3)
+> to run the `sol.py` script and test the generated chllenge
+
 Alternatively with `-f`, we can use an _instances_ file, which should specify the
 challengers that will have to solve the generated challenges:
 
