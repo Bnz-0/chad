@@ -2,4 +2,4 @@ import os
 
 os.system("make")
 
-check_solution("python sol.py", flag)
+check_solution("python3 sol.py", flag)
