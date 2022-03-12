@@ -1,0 +1,20 @@
+[
+	{
+		"challenge_dir": "linux/hello_world",
+		"param": {"port_offset": 0},
+		"out": "../generated_challs/hello_world",
+		"docker_compose": true
+	},
+	{
+		"challenge_dir": "linux/bomb",
+		"param": {"port_offset": 1},
+		"out": "../generated_challs/bomb",
+		"docker_compose": true
+	},
+	{
+		"challenge_dir": "web/the_ugly_blog",
+		"param": {"port_offset": 2},
+		"out": "../generated_challs/the_ugly_blog",
+		"docker_compose": true
+	}
+]

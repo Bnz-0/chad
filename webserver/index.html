@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{title}}</title>
+    <style>
+      a {
+        color: seagreen;
+      }
+      .container {
+        background-color: cornsilk;
+        font-family: "Courier New", Courier, monospace;
+      }
+      @media only screen and (min-width: 768px) {
+        .container {
+          padding-left: 10%;
+          padding-right: 10%;
+        }
+      }
+      .title {
+        color: seagreen;
+      }
+      .button {
+        color: black;
+        text-decoration: none;
+        border: 2px dashed seagreen;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .button:hover {
+        border: 2px solid seagreen;
+        cursor: pointer;
+      }
+      .separator {
+        margin: 10px;
+        border-top: 2px solid;
+      }
+      .code {
+        background-color: lightgray;
+        padding: 2px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body class="container">
+    <h1 class="title">{{title}}</h1>
+    <div class="separator"></div>
+    <h3>Setup</h3>
+    <ol>
+      <li>Install <a href="https://www.wireguard.com/install/">WireGuard</a></li>
+      <li>Download your personal <a class="button" href="{{oauth_url}}">configuration</a> file (GitHub authentication required)
+    </ol>
+    <h3>VPN (de)activation:</h3>
+    <ul>
+      <li>To activate: <span class="code">sudo wg-quick up ./<i>your-config-file</i></span></li>
+      <li>To de-activate: <span class="code">sudo wg-quick down ./<i>your-config-file</i></span></li>
+    </ul>
+  </body>
+</html>

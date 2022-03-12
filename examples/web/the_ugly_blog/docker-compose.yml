@@ -1,0 +1,7 @@
+    ugly_blog__{{github_username}}:
+        build: ./{{github_username}}
+        image: ugly_blog_{{github_id}}
+        ports:
+                - "0.0.0.0:{{base_port+int(port_offset)}}:8080"
+        privileged: true
+        restart: "unless-stopped"

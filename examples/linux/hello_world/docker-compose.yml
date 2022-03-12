@@ -1,0 +1,7 @@
+    hello_world_{{github_username}}:
+        build: ./{{github_username}}
+        image: hello_world_{{github_id}}
+        ports:
+                - "0.0.0.0:{{base_port+int(port_offset)}}:1982"
+        privileged: true
+        restart: "unless-stopped"

@@ -1,0 +1,9 @@
+Jinja2
+numpy
+sympy
+Click
+xeger
+pycparser
+ansicolors
+flask
+python-dotenv

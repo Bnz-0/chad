@@ -1,0 +1,7 @@
+    bomb__{{github_username}}:
+        build: ./{{github_username}}
+        image: bomb_{{github_id}}
+        ports:
+                - "0.0.0.0:{{base_port+int(port_offset)}}:1982"
+        privileged: true
+        restart: "unless-stopped"
